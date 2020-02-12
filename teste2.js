@@ -1,8 +1,8 @@
 produtos = {
-    nome: ["Alface", "Almeirao"],
+    nome: ["Alface", "Almeirao", "Cheiro Verde", "Rúcula", "Chicória],
     preco: 1.65
 }
-lojas = ["Matriz", "Filial"]
+lojas = ["Matriz", "Filial", "Filial 2"]
 
 
 //VARIÁVEIS
@@ -141,6 +141,7 @@ function addTabela(produto, qtde, preco, subtotal, indice) {
     btnDeletar.innerHTML = '<img src="assets/images/delete.svg" alt="Deletar IMC">';
     btnDeletar.classList.add('btn');
     btnDeletar.classList.add('btn-danger');
+
 
     btnDeletar.addEventListener("click", (event) => {
         event.preventDefault();
