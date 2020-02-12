@@ -1,5 +1,5 @@
 produtos = {
-    nome: ["Alface", "Almeirao", "Cheiro Verde", "Rúcula", "Chicória],
+    nome: ["Alface", "Almeirao", "Cheiro Verde", "Rúcula", "Chicória"]
     preco: 1.65
 }
 lojas = ["Matriz", "Filial", "Filial 2"]
