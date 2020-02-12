@@ -141,7 +141,6 @@ function addTabela(produto, qtde, preco, subtotal, indice) {
     btnDeletar.innerHTML = '<img src="assets/images/delete.svg" alt="Deletar IMC">';
     btnDeletar.classList.add('btn');
     btnDeletar.classList.add('btn-danger');
-    btnDeletar.classList.add('float-right');
 
     btnDeletar.addEventListener("click", (event) => {
         event.preventDefault();
