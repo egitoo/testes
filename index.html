@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,7 +14,8 @@
 
 <body>
 
-    <h1 class="text-center table-dark py-3">Cadastrar venda</h1>
+    <h1 style="padding:15px; border-radius: 5px; margin-bottom: 20px;" class="text-center table-dark">Cadastrar venda
+    </h1>
     <div class="container">
 
         <div class="row align-items-start">
@@ -28,42 +30,50 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group mt-2">
             <label for="loja">Loja</label>
-            <select class="custom-select" id="loja">
-                <option selected disabled>Selecione...</option>
-                <option value="matriz">Matriz</option>
-                <option value="filial1">Filial 1</option>
-                <option value="filial2">Filial 2</option>
+            <select class="custom-select" id="lojas">
+
             </select>
         </div>
 
-            <button class="btn btn-dark mt-4" id="btnAdd" type="submit">Adicionar</button>
+        <h4 class='mt-4 text-center bg-dark text-white'>Adicionar produtos</h3>
+        <div class="d-flex justify-content-around">
+            <select class="btn" id="produtos" aria-required="true"></select>
+            <input class="w-25" type="number" id="qtde" required>
+            <input class="w-25" type="number" id="preco" required>
+            <button class="btn btn-success" id="btnAdd">+</button>
+        </div>
 
-        <table class="table mt-1">
+        <h4 class='mt-4 text-center bg-dark text-white'>Carrinho</h3>
+        <div class='container mt-n2'></div>
+        <table class="table table-responsive">
             <thead class="table-dark">
-                    <th class="text-center">Produto</th>
-                    <th class="text-center">Qtde</th>
-                    <th class="text-center">Preço</th>
-                    <th class="text-center">Subtotal</th>
-                    <th></th>
+                <tr>
+                    <th class="col">Produto</th>
+                    <th class="col">Qtde</th>
+                    <th class="col">Preço</th>
+                    <th class="col" colspan="2">Subtotal</th>
                 </tr>
             </thead>
 
-            <tbody ID ="itens"></tbody>
+            <tbody>
 
-            <tfoot class="table-dark">
-                <td colspan="3">Total</td>
-                <td><input class="w-100" type="number" id="total"></td>
-                <td></td>
-       
+            </tbody>
+
+            <tfoot style="font-weight: bolder;" class="table-dark">
+                <tr>
+                <td class="col" colspan="3">Total</td>
+                <td class="col" colspan="2"><input type="number" id="total" class="bg-dark border-0 text-white text-left w-75" readonly></td>
+
+                </tr>                
 
             </tfoot>
-
         </table>
 
-        <button class="btn btn-dark float-right" id="btnSend" type="submit">Gravar</button>
+        <button class="btn btn-dark float-right mt-n2" type="submit">Gravar</button>
 
 </body>
-<script src="teste.js"></script>
+<script src="teste2.js"></script>
+
 </html>
