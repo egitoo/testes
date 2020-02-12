@@ -3,8 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" async>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -31,7 +30,7 @@
         </div>
 
         <div class="form-group mt-2">
-            <label for="loja">Loja</label>
+            <label for="lojas">Loja</label>
             <select class="custom-select" id="lojas">
 
             </select>
@@ -39,9 +38,9 @@
 
         <h4 class='mt-4 text-center bg-dark text-white'>Adicionar produtos</h3>
         <div class="d-flex justify-content-around">
-            <select class="btn" id="produtos" aria-required="true"></select>
-            <input class="w-25" type="number" id="qtde" required>
-            <input class="w-25" type="number" id="preco" required>
+            <label for="produtos"></label><select class="btn" id="produtos" aria-required="true"></select>
+            <label for="qtde"></label><input class="w-25" type="number" id="qtde" placeholder="Qtde" required>
+            <label for="preco"></label><input class="w-25" type="number" id="preco" required>
             <button class="btn btn-success" id="btnAdd">+</button>
         </div>
 
