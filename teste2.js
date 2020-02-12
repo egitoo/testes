@@ -1,8 +1,8 @@
 produtos = {
-    nome: ["Alface", "Almeirao", "Cheiro Verde", "Rúcula", "Chicória"]
+    nome: ["Alface", "Almeirao"],
     preco: 1.65
 }
-lojas = ["Matriz", "Filial", "Filial 2"]
+lojas = ["Matriz", "Filial"]
 
 
 //VARIÁVEIS
