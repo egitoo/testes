@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pedido</title>
+
+</head>
+
+<body>
+
+    <h1 style="padding:30px; border-radius: 5px; margin-bottom: 65px;" class="text-center table-dark">Cadastrar venda
+    </h1>
+    <div class="container">
+
+        <div class="row align-items-start">
+            <div class="col">
+                <label for="data">Data</label>
+                <input type="date" class="form-control" id="data" placeholder="City" required>
+            </div>
+
+            <div class="col">
+                <label for="usuario">Usuário</label>
+                <input type="text" class="form-control" id="usuario" required readonly>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="loja">Loja</label>
+            <select class="custom-select" id="lojas">
+
+            </select>
+        </div>
+
+        <h4 class='mt-5 text-center bg-dark text-white'>Adicionar produtos</h3>
+        <div class="d-flex justify-content-around">
+            <select class="btn" id="produtos" aria-required="true"></select>
+            <input class="w-25" type="number" id="qtde" required>
+            <input class="w-25" type="number" id="preco" required>
+            <button class="btn btn-success" id="btnAdd">+</button>
+        </div>
+
+        <h4 class='mt-5 text-center bg-dark text-white'>Carrinho</h3>
+        <div class='container mt-n2'></div>
+        <table class="table table-hover table-responsive">
+            <thead class="table-dark">
+                <tr>
+                    <th>Produto</th>
+                    <th>Qtde</th>
+                    <th>Preço</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+            <tfoot style="font-weight: bolder;" class="table-dark">
+                <tr>
+                <td colspan="3">Total</td>
+
+                <td><input type="number" id="total" class="bg-dark border text-white text-left w-50" value=0></td>
+                <td></td>
+                </tr>                
+
+            </tfoot>
+        </table>
+
+        <button class="btn btn-dark float-right mt-n3" type="submit">Gravar</button>
+
+</body>
+<script src="teste2.js"></script>
+
+</html>
